@@ -7,6 +7,7 @@ const userSchema = new Schema({
     lastName: String,
     email: String,
     budget: Number,
+    categories: [],
     wishlistItems: [{ type: Schema.Types.ObjectId, ref: "Item" }],
     wardrobeItems : [{ type: Schema.Types.ObjectId, ref: "Item" }],
     archiveItems : [{ type: Schema.Types.ObjectId, ref: "Item" }],
