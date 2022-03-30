@@ -9,6 +9,7 @@ const userSchema = new Schema({
     budget: Number,
     categories: [],
     wishlistItems: [{ type: Schema.Types.ObjectId, ref: "Item" }],
+    cartItems : [{ type: Schema.Types.ObjectId, ref: "Item" }],
     wardrobeItems : [{ type: Schema.Types.ObjectId, ref: "Item" }],
     archiveItems : [{ type: Schema.Types.ObjectId, ref: "Item" }],
 });
