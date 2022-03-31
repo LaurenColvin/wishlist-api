@@ -7,7 +7,7 @@ const User = require("./../models/User")
 
 //returns all users and their data
 router.get("/", (req, res) => {
-    User.find({}).populate('wishlistItems').populate('cartItems').then((user) => {
+    User.find({}).populate('wishlistItems').populate('cartItems').populate('wardrobeItems').populate('archiveItems').then((user) => {
         res.json({
             status: 200,
             user: user,
@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
 
 //returns a single user and their data
 router.get("/:id", (req, res) => {
-    User.findById(req.params.id).populate('wishlistItems').populate('cartItems').then((user) => {
+    User.findById(req.params.id).populate('wishlistItems').populate('cartItems').populate('wardrobeItems').populate('archiveItems').then((user) => {
         res.json({
             status: 200,
             user: user,
