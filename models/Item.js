@@ -7,6 +7,8 @@ const itemSchema = new Schema({
     title : String,
     brand: String,
     price : Number,
+    size: String,
+    color: String,
     link : String,
     imgUrl : String
 });
