@@ -22,4 +22,4 @@ app.use('/item', itemController)
 
 app.listen(PORT, () => {console.log(`listening on port ${PORT}`)})
 
-// heroku link: https://agile-temple-34348.herokuapp.com/
+// heroku link: https://obscure-eyrie-60165.herokuapp.com/
