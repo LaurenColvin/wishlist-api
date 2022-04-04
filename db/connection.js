@@ -1,6 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-let mongoURL = ""
+let mongoURL = "";
 
 if (process.env.NODE_ENV === "production") {
   mongoURL = process.env.DB_URL;
@@ -8,6 +8,6 @@ if (process.env.NODE_ENV === "production") {
   mongoURL = "mongodb://localhost/wishlist-api";
 }
 
-mongoose.connect(mongoURL)
+mongoose.connect(mongoURL);
 
-module.exports = mongoose
+module.exports = mongoose;
